@@ -139,7 +139,7 @@ body {
 }
 .challenge > a {
   text-decoration: none;
-  margin: 10px 0 20px;
+  margin: 10px auto 20px;
   color: var(--Desaturated-blue);
   font-weight: 700;
   display: block;
