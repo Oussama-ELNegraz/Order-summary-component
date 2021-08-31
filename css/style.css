@@ -49,6 +49,7 @@ body {
 @media (min-width: 1200px) {
     body{
         background-image: url("../images/pattern-background-desktop.svg");
+        background-size: cover;
         background-repeat: no-repeat;
     }
 }
