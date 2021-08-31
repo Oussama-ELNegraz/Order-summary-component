@@ -65,11 +65,11 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 270px;
+  width: 250px;
 }
 @media (min-width: 1200px) {
-  .container {
-    width: 280px;
+  .challenge .container  {
+    width: 270px;
   }
 }
 .challenge .container h2 {
