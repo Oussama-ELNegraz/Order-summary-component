@@ -1,0 +1,142 @@
+/* Start Variables */
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue : hsl(245, 75%, 52%);
+    --Very-pale-blue : hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+/* ### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;    
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--Pale-blue);
+    /* background-image: url("../images/pattern-background-mobile.svg"); */
+}
+.challenge {
+    width: 325px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px -10px blue
+}
+/* Large */
+@media (min-width: 1200px) {
+    body{
+        background-image: url("../images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+    }
+}
+.challenge img{
+    max-width: 100%;
+}
+.challenge .container{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+.challenge .container h2{
+    color: var(--Dark-blue);
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 25px;
+}
+.challenge .container p{
+    color: var(--Desaturated-blue);
+    font-size: 0.95em;
+    line-height: 1.7;
+}
+.challenge .container > div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+.challenge .container > div div{
+    text-align: left;
+    flex: 1;
+}
+.challenge .container > div div h4{
+    color: var(--Dark-blue);
+    font-weight: 900;
+    margin: 0;
+    font-size: 15px;
+}
+.challenge .container > div div p{
+    margin: 0;
+}
+.challenge .container > div a{
+    color: var(--Bright-blue);
+    font-weight: 700;
+    font-size: 13px;
+}
+/* Large */
+@media (min-width: 1200px) {
+    .challenge .container > div a:hover{
+        text-decoration: none;
+        color: hsl(245deg 75% 52% / 80%);
+    }
+}
+.challenge  button{
+    display: block;
+    width: 90%;
+    padding: 15px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: var(--Bright-blue);
+    border-radius: 10px;
+    border: none;
+}
+@media (min-width: 1200px) {
+    .challenge  button:hover{
+        background-color: hsl(245deg 75% 52% / 80%);
+    }
+}
+.challenge  button a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+.challenge  > a{
+    text-decoration: none;
+    margin: 10px 0 20px;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+@media (min-width: 1200px) {
+    .challenge > a:hover{
+        color: var(--Dark-blue);
+    }
+}
+
+
+/* End Global Rules */
